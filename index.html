@@ -31,8 +31,81 @@
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet" />
 
   <style>
-    /* (your existing styles here — no changes) */
+    
+    body {
+      font-family: 'Vollkorn', serif;
+      margin: 0; padding: 0;
+      background-color: #ffffff;
+      color: #005685;
+    }
+    header {
+      background: #005685;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 125px;
+      vertical-align: middle;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #005685;
+      border-bottom: 2px solid #7490c3;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .btn-book {
+      display: inline-block;
+      background-color: #7490c3;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 30px 0;
+      transition: background-color 0.3s ease;
+    }
+    .btn-book:hover {
+      background-color: #005685;
+    }
+    /* Remove underline from phone number link by default */
+    #contact ul li a[href^="tel:"] {
+      text-decoration: none;
+      color: #005685;
+    }
+    /* Underline phone number on hover */
+    #contact ul li a[href^="tel:"]:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #7490c3;
+      border-top: 1px solid #005685;
+      margin-top: 60px;
+    }
   </style>
+  
 </head>
 
 <body>
