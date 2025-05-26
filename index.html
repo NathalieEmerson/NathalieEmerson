@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Q2FH0TK2Y9');
   </script>
 
@@ -16,27 +15,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NatEase Sports Therapy</title>
 
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://natease.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Sports therapy and massage in Montrose. NatEase Sports Therapy offers personalised treatment plans including deep tissue massage, cupping, joint mobilisation, and more." />
-  <meta name="keywords" content="sports therapy, massage, Montrose, deep tissue massage, cupping, joint mobilisation, pain relief, NatEase, injury recovery" />
+  <meta name="description" content="Sports therapy and massage in Montrose, Angus, and Tayside. NatEase Sports Therapy offers personalised treatment plans including deep tissue massage, cupping, joint mobilisation, and more." />
+  <meta name="keywords" content="sports therapy, massage, Montrose, Angus, Tayside, deep tissue massage, cupping, joint mobilisation, pain relief, NatEase, injury recovery" />
 
   <!-- Open Graph (Facebook/LinkedIn sharing) -->
   <meta property="og:title" content="NatEase Sports Therapy" />
-  <meta property="og:description" content="Personalised sports therapy and massage in Montrose." />
+  <meta property="og:description" content="Personalised sports therapy and massage in Montrose, Angus, and Tayside." />
   <meta property="og:image" content="https://natease.com/logo.png" />
   <meta property="og:url" content="https://natease.com" />
   <meta property="og:type" content="website" />
+
+  <!-- Structured Data (LocalBusiness Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "NatEase Sports Therapy",
+    "image": "https://natease.com/logo.png",
+    "@id": "https://natease.com",
+    "url": "https://natease.com",
+    "telephone": "+447714308150",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "71 Murray Street",
+      "addressLocality": "Montrose",
+      "postalCode": "DD10 8JZ",
+      "addressCountry": "GB"
+    },
+    "description": "Sports therapy and massage in Montrose, Angus, and Tayside offering deep tissue massage, cupping, joint mobilisations, and more.",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "££"
+  }
+  </script>
 
   <!-- Load Vollkorn font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet" />
 
   <style>
-    
     body {
       font-family: 'Vollkorn', serif;
       margin: 0; padding: 0;
       background-color: #ffffff;
       color: #005685;
+    }
+    h1.hidden {
+      position: absolute;
+      left: -9999px;
     }
     header {
       background: #005685;
@@ -88,12 +119,10 @@
     .btn-book:hover {
       background-color: #005685;
     }
-    /* Remove underline from phone number link by default */
     #contact ul li a[href^="tel:"] {
       text-decoration: none;
       color: #005685;
     }
-    /* Underline phone number on hover */
     #contact ul li a[href^="tel:"]:hover {
       text-decoration: underline;
     }
@@ -104,11 +133,25 @@
       border-top: 1px solid #005685;
       margin-top: 60px;
     }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header img {
+        height: 80px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      img {
+        max-width: 90% !important;
+      }
+    }
   </style>
-  
 </head>
 
 <body>
+
+<h1 class="hidden">Sports Therapy and Massage in Montrose, Angus, and Tayside – NatEase Sports Therapy</h1>
 
 <header>
   <img src="logo.png" alt="NatEase Sports Therapy Logo" />
@@ -123,15 +166,14 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Hi, I’m Nathalie, a dedicated sports therapist specialising in personalised, client-focused care. With a Higher National Diploma (HND) in Sports Therapy and currently entering the final year of my BSc in Sports Therapy and Rehabilitation, I bring both academic training and real-world experience to every session.</p>
+  <p>Hi, I’m Nathalie, a dedicated sports therapist based in Montrose, serving clients across Angus and Tayside. I specialise in personalised, client-focused care. With a Higher National Diploma (HND) in Sports Therapy and currently entering the final year of my BSc in Sports Therapy and Rehabilitation, I bring both academic training and real-world experience to every session.</p>
   <p>At NatEase Sports Therapy, there’s no one-size-fits-all approach. Every treatment plan is carefully tailored to suit the individual — whether you're recovering from injury, preparing for competition, or simply looking to move more freely.</p>
   <p>While I do support active individuals and athletes, many of my clients don’t play sports at all. Aches and pains can come from everyday life — like sitting at a desk all day, lifting heavy loads, or repeating the same movements for hours. I regularly work with care workers, gardeners, joiners, roofers, and office professionals to help reduce pain and improve mobility.</p>
   <p>Alongside my clinic work, I also provide sports therapy support for a local football team and first aid services for a local rugby team, keeping athletes safe and performing at their best.</p>
 </section>
 
-<!-- Image Between Sections -->
 <div style="text-align: center; margin: 40px 0;">
-  <img src="web-photo-1.png" alt="Therapy in action" style="max-width: 40%; border-radius: 10px;" />
+  <img src="web-photo-1.png" alt="Therapy in action in Montrose" style="max-width: 40%; border-radius: 10px;" loading="lazy" />
 </div>
 
 <section id="services">
@@ -153,14 +195,13 @@
   <p>Gentle, controlled movements applied to joints to reduce stiffness, restore motion, and ease discomfort. Commonly used for recovery from injury or inactivity, this technique helps restore natural, pain-free movement.</p>
 </section>
 
-<!-- Image Between Sections -->
 <div style="text-align: center; margin: 40px 0;">
-  <img src="web-photo-2.png" alt="Therapy in action" style="max-width: 40%; border-radius: 10px;" />
+  <img src="web-photo-2.png" alt="Sports therapy session in Angus" style="max-width: 40%; border-radius: 10px;" loading="lazy" />
 </div>
 
 <section id="news">
   <h2>News</h2>
-  <p>Stay tuned for updates about NatEase Sports Therapy, helpful tips, and news.</p>
+  <p>Stay tuned for updates about NatEase Sports Therapy, helpful tips, and news from Montrose, Angus, and across Tayside.</p>
 </section>
 
 <section id="contact">
@@ -171,10 +212,8 @@
     <li><strong>Email:</strong> <a href="mailto:natease@outlook.com">natease@outlook.com</a></li>
     <li><strong>Address:</strong> NatEase Sports Therapy, 71 Murray Street, Montrose, DD10 8JZ</li>
     <li><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61561699798861" target="_blank" rel="noopener">Facebook Page</a></li>
-    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/natease_sports_therapy/?fbclid=IwZXh0bgNhZW0CMTEAYnJpZBEwcEQ3UVFGVlNlcFd4S2dMbQEeAg4dkBqiMXnq7ugwrj7v1uEd9EL6VzshE4qeiSZ0H_G1C9AYWbyfOjOGm_A_aem_TtAQdD2U98LQfdOUuJFAzg" target="_blank" rel="noopener">Instagram Profile</a></li>
+    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/natease_sports_therapy/" target="_blank" rel="noopener">Instagram Profile</a></li>
   </ul>
-
-  
 </section>
 
 <footer>
