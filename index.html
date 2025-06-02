@@ -149,6 +149,46 @@
       }
     }
   </style>
+
+<style>
+  .review-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .review {
+    display: none;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .review.active {
+    display: block;
+  }
+
+  .stars {
+    color: gold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .review blockquote {
+    font-style: italic;
+    border-left: 4px solid #7490c3;
+    padding-left: 15px;
+    margin: 20px auto;
+    max-width: 700px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+
 </head>
 
 <body>
@@ -206,6 +246,54 @@
   <p>Stay tuned for updates about NatEase Sports Therapy, helpful tips, and news from Montrose, Angus, and across Tayside.</p>
 </section>
 
+<section id="reviews">
+  <h2>Reviews</h2>
+  <div class="review-carousel">
+
+    <div class="review active">
+      <div class="stars">★★★★★</div>
+      <blockquote>
+        “Another fabulous back treatment from Nat. She certainly has the magic touch! I feel so good I'm going to book my next treatment right now!”
+      </blockquote>
+      <p><strong>– Susan</strong> (5 days ago)</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <blockquote>
+        “Five Stars Given - Felt at ease. Informative. Hit the spot, and felt a difference. Booked my next appointment before leaving.”
+      </blockquote>
+      <p><strong>– Darren</strong></p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <blockquote>
+        “Been having back pains for the past week or so and already after one session I feel much better. Highly recommended.”
+      </blockquote>
+      <p><strong>– Michael</strong></p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <blockquote>
+        “Nathalie is really welcoming, and explains what she is doing as she goes. It feels really good to have my legs freshened up by massage before a marathon event. Here’s hoping I fly round now!”
+      </blockquote>
+      <p><strong>– Amanda</strong></p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <blockquote>
+        “Really impressed with the service & treatment provided. Nathalie was very welcoming, fully explained everything & really put my daughter at ease since it was her first sports massage. Great advice given & massage has really helped, thank you!”
+      </blockquote>
+      <p><strong>– Melissa</strong></p>
+    </div>
+
+  </div>
+</section>
+
+
 <section id="contact">
   <h2>Contact</h2>
   <p>Feel free to reach out by phone, email, or through social media.</p>
@@ -221,6 +309,20 @@
 <footer>
   <p>© 2025 NatEase Sports Therapy</p>
 </footer>
+
+<script>
+  const reviews = document.querySelectorAll('.review');
+  let current = 0;
+
+  function showNextReview() {
+    reviews[current].classList.remove('active');
+    current = (current + 1) % reviews.length;
+    reviews[current].classList.add('active');
+  }
+
+  setInterval(showNextReview, 6000); // Change every 6 seconds
+</script>
+
 
 </body>
 </html>
